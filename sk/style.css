@@ -1,0 +1,502 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana,Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    transition: .2s linear;
+}
+html{
+    font-size: 18px;
+    overflow-x:scroll;
+}
+
+body{
+    background:black;
+}
+button{
+    display: inline-block;
+    /* margin-top: 1rem; */
+    padding: 0.5rem 2.5rem;
+    margin-left: 20px;
+    border-radius: 3rem;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    background-color: #c1ff00;
+    cursor: pointer;
+    transform: all .3s ease-in-out;
+    align-items: center;
+}
+header{
+    top: 0; left: 0;
+    width: 100%;
+    height: 20px;
+    background: black;
+    box-shadow: 0.5 rem 1rem rgba(0,0,0,.1);
+    padding: 1.8rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    
+}
+
+header .logo{
+    font-size: 2rem;
+    
+}
+.navbar{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.navbar a{
+    font-size: 1rem;
+    margin-left: 2rem;
+    color: white;
+}
+a:hover::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin: auto;
+    display: block;
+}
+a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    margin: auto;
+    display: block;
+    transition: .5s ease-in-out;
+}
+.content{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-top: 20%;
+}
+.content h1{
+    font-size: 50px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: #fff;
+}
+.content h1 span{
+    display: inline-block;
+    padding: 4px;
+    border-radius: 3px;
+    background-color: #6952f9;
+}
+.content p{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 30px;
+    line-height: 30px;
+}
+.sm{
+    margin-top: 30px;
+
+}
+.mmm{
+    flex-direction: column;
+}
+ .imgs{
+    margin-top: 20%;
+    padding: 0 9%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: inline-block;
+    max-width: 100%;
+}
+.ak{
+    position: absolute;
+    left: auto;
+    top: 125%;
+    right: 6%;
+    bottom: auto;
+    transform-style: preserve-3d;
+    
+    
+}
+/* .shadow {
+    position:relative;
+    display: table;
+    background-attachment: fixed;
+    left: 0;
+    top: auto;
+    right: 0;
+    bottom: -3%;
+    z-index: 2;
+    min-height: 100vh;
+    margin-bottom: 12vh;
+    background-image: webkit-gradient(linear,left bottom,left top,colorstop(28%,#0e0e0e),to(transparent));
+    background-image: linear-gradient(360deg,#0e0e0e 28%,transparent);
+    overflow: auto;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform:translateY(-1px) scale(2)
+} */
+.clients-section {
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    background-color: #c1ff00;
+    color: #0e0e0e;
+}
+.clients-section h1{
+    font-size: 16px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+
+}
+/* .clients-section .aaa{
+    width: 100%;
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+} */
+.clients-section img{
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 5%;
+    /* padding: 1.8rem 9%; */
+    border: 0;
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 100%;
+    box-sizing: border-box;
+    grid: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.b{
+    width: 100%;
+    height: 100vh;
+}
+.problem{
+    color: #fff;
+    padding: 1.8rem 9%;
+    font-family:'Quicksand', sans-serif;
+}
+.problem .content-1{
+    margin-top: 20%;
+    font-family: 'Inconsolata', monospace;
+}
+.problem .content-1 h5{
+    font-size: 16px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.problem .content-1 p{
+    font-size: 24px;
+    margin-top: 20px;
+    line-height: 45px;
+}
+.problem .feadbacks{
+    display: flex;
+    margin-top: 10%;
+    justify-content: space-between;
+
+}
+.problem .feadbacks .c{
+    display: flex;
+    line-height: 90px;
+    gap: 15px;
+}
+.row{
+    display: flex;
+    height: 88%;
+    margin-top: 20%;
+    padding: 1.8rem 9%;
+}
+.col{
+    flex-basis: 50%;
+}
+
+.col-1 h1{
+    color: #fff;
+    font-size:16px;
+}
+.col-1 p{
+    color:#fff;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.card{
+    width: 600px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 40px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    
+}
+.col h3{
+    color:#0e0e0e   ;
+    /* text-shadow: 0 0 5px; */
+}
+.col p{
+    color:#0e0e0e;
+    font-size: 15px;
+}
+.d{
+    display: flex;
+}
+.card1{
+    background-color: #c1ff00;
+}
+.card2{
+    background-color: #cfb8ff;
+}
+.card3{
+    background-color: #fff;
+}
+.dddd{
+    padding: 1.8rem 9%;
+}
+.col-1{
+    margin-left: 90px;
+    line-height: 40px;
+}
+
+
+.work{
+    height: 100vh;
+    width: 100%;
+    padding: 1.8rem 9%;
+}
+.work .ma{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+}
+.ma h1{
+    font-size: 40px;
+    color: #fff;
+}
+.ma p{
+    font-size: 20px;
+    color: #fff;
+} 
+.ma h1 span{
+    display: inline-block;
+    padding: 4px;
+    border-radius: 3px;
+    background-color: #6952f9;
+}
+.overlay{
+    width: 90vw;
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: x0px;
+    grid-row-gap: 50px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    /* -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto; */
+    /* overflow-y: none; */
+    margin-top: 100px;
+}
+.overlay img{
+    width: 80%;
+    height: auto;
+}
+.over h5{
+    font-size: 30px;
+    color: #fff;
+}
+.over p{
+    font-size: 25px;
+    color: #fff;
+    margin-top: 10px;
+}
+.over img:hover{
+    border: 10px solid #6952f9;
+}
+
+.process{
+    width: 100%;
+    height: 100vh;
+    margin-top: 150%;
+    position: relative;
+    padding: 1.8rem 9%;
+}
+.process .e{
+    text-align: center;
+    color: #fff;
+}
+.e h1{
+    font-size: 35px;
+    color: #fff;
+}
+.e p{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 30px;
+}
+.box-container{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    margin-top: 90px;
+    border: 1px solid #fff;
+
+}
+.box1{
+    display: flex;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    padding-left: 40px;
+    padding-right: 60px;
+    padding-left: 60px;
+    align-items: flex-start;
+    grid-column-gap: 50px;
+}
+.box1 h1{
+    font-size: 80px;
+}
+.box1 p{
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 30px;
+}
+.hr{
+position: relative;
+left: 110px;
+top: auto;
+right: 0px;
+bottom: 0;
+width: 80%;
+height: 1px;
+background-color: #fff;
+}
+.yellow-bg {
+    position: absolute;
+    left: 0;
+    top: -2%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 70%;
+    height: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #c1ff00;
+    margin-top: 237px;
+}
+.ii{
+    position: absolute;
+    left: auto;
+    top: 23%;
+    right: 4%;
+    bottom: auto;
+}
+
+.pricing{
+    width: 100%;
+    height: 100vh;
+    margin-top: 25%;
+    position: relative;
+    padding: 1.8rem 9%; 
+}
+.pricing .ef{
+    text-align: center;
+    color: #fff;
+}
+.ef h1{
+    font-size: 35px;
+    color: #fff;
+}
+.ef p{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 30px;
+}
+.ef h1 span{
+    display: inline-block;
+    padding: 4px;
+    border-radius: 3px;
+    background-color: #6952f9;
+}
+.block1{
+    width: 100%;
+    height: 60vh;
+    border: 1px solid #fff;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    padding: 2.5rem 9%;
+    margin-top: 80px;
+}
+.f{
+    display: flex;
+    gap: 15px;
+}
+.block1 h5{
+    font-size: 15px;
+}
+.block1 h1{
+    font-size: 80px;
+    margin-top: 20px;
+}
+.block1 p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.block1 span{
+    font-size: 30px;
+}
+.block1 button{
+    margin-top: 30px;
+}
+.block1 .f p{
+    line-height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
